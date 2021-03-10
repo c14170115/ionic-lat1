@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Input</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Masukkan Data</h2>
+  Judul
+  <ion-input [(ngModel)]="judul"></ion-input>
+  <br/>
+  Isi
+  <ion-input [(ngModel)]="isi"></ion-input>
+  <br/>
+  Tanggal
+  <input type="date" [(ngModel)]="tanggal"/>
+  <br/>
+  <button ion-button (click)="simpan()">Simpan</button>
+</ion-content>
